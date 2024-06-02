@@ -1,0 +1,438 @@
+
+@media only screen and (max-width: 600px) {
+#logo {
+    height: 100px; 
+}
+.glowa {
+    flex-direction: column; 
+     }
+     .lista {
+    flex-direction: column; 
+     }
+     .lista a {
+     font-size: 18px; /
+    }
+     .prev, .next {
+    font-size: 16px; 
+     }
+    .jedzenie {
+     width: 100%; 
+    }
+    }
+    
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    }
+    
+    @media only screen and (min-width: 1025px) {
+
+}
+@keyframes popFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.pop-in {
+    animation: popFromBottom 1s ease-out;
+}
+
+html {
+    scroll-behavior: smooth ;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    background-color: #F4F1ED;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto; 
+    padding: 20px 0;
+    background-color: #FFFFFF;
+}
+.glowa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    height: 130px;
+    transition: transform 0.3s ease;
+}
+#logo:hover{
+    transform: scale(1.1);
+}
+
+.slajder {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.lista {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 65px;
+}
+
+.lista li {
+    display: inline;
+}
+
+.lista a {
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.lista a:hover {
+    background-color: #FDAA23;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+}
+#niehover{
+    background-color: #fff;
+}
+#niehover:hover{
+    background-color: #fff;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.prev {
+    left: 10px;
+    border-radius: 10px;
+}
+
+.next {
+    right: 10px;
+    border-radius: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+footer{
+    background-color: #272727;
+    width: 100%;
+    margin: auto;
+}
+#stopa{
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+#cala{
+    width: 80%;
+    margin: auto;
+    min-height: 100%;
+}
+#zegar, #dzien, #iledokonca{
+    margin-top: 10px;
+}
+
+.menu {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.menu h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.rzeczywmenu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.jedzenie {
+    position: relative;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.jedzenie img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.jedzenie .cena {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 2em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.jedzenie:hover .cena {
+    opacity: 1;
+}
+.cena {
+    font-size: 15px;
+}
+#menu2 a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#onas img{
+    margin-left: 150px;
+}
+#onas h1{
+    text-align: center;
+}
+.onaskon {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+
+.onasimg {
+    flex: 1;
+}
+.onasimg1 {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.onastekst {
+    flex: 2;
+    margin-left: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.rezerwacja-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #FDAA23;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rezerwacja-btn:hover {
+    background-color: #e6951f;
+    transform: scale(1.05);
+}
+.back{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border:#333;
+    position: fixed;
+    top: 90%;
+    right: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #FDAA23;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+    border: none;
+    transition: background-color 0.3s;
+    object-fit: cover;
+    transition: transform .3s ease;
+    border-radius: 10px;
+    margin-right: 30px;
+  } 
+  .back:hover{
+  color: white;
+  background-color: #e6951f;
+  transform: scale(1.2);
+  border-radius: 10px;
+  }
+  .back a:link{
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .back a:visited{
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  .footer-divs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; 
+}
+
+.footer-divs > div {
+    flex: 1; 
+    margin: 0 10px; 
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.footer-div2,
+.footer-div3,
+.footer-div4 {
+    background-color: #272727;
+    height: 175px;
+    width: calc(30% - 20px); 
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+}
+
+.zdjeciefo{
+    border-radius: 10px;
+    background-color: transparent;
+}
+#rezerwacja {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formularz-rezerwacji {
+    display: grid;
+    gap: 10px;
+}
+
+#formularz-rezerwacji label {
+    font-weight: bold;
+}
+
+#formularz-rezerwacji input[type="text"],
+#formularz-rezerwacji input[type="email"],
+#formularz-rezerwacji input[type="tel"],
+#formularz-rezerwacji input[type="date"],
+#formularz-rezerwacji input[type="time"],
+#formularz-rezerwacji input[type="number"],
+#formularz-rezerwacji textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#formularz-rezerwacji textarea {
+    resize: none;
+}
+
+#formularz-rezerwacji button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #FDAA23;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#formularz-rezerwacji button[type="submit"]:hover {
+    background-color: #e6951f;
+    transform: scale(1.05);
+}
+
+#potwierdzenie-rezerwacji {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ukryty {
+    display: none;
+}
+h1{
+    text-align: center;
+}
+.zdjeciefo {
+    width: 40px; 
+    height: 40px; 
+  }
+  header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+ 

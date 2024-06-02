@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WillyEAT | Warjan&Wiehle</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="cala">
+    <header>
+        <a id="niehover" href="zarcie.html">
+        <div class="glowa"><p id="#top"></p>
+            <img src="logo.png" id="logo" alt="logo">
+            <nav>
+                <ul class="lista">
+                    <li><a href="zarcie.html">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#onas">O nas</a></li>
+                    <li><a href="#rezerwacja">Rezerwacja</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="slajder">
+            <div class="slider">
+                <div class="slide"><img src="burgier.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="pizza.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="tacos.jpg" alt="Image 3"></div>
+            </div>
+            <button class="prev" onclick="poprzedni()">&#10094;</button>
+            <button class="next" onclick="nastepny()">&#10095;</button>
+        </div>
+        <br>
+        
+        <script>
+            let obecny = 0;
+            function poka(index) {
+                const slides = document.querySelector('.slider');
+                const slajdowanie = document.querySelectorAll('.slide').length;
+                if (index >= slajdowanie) {
+                    obecny = 0;
+                } else if (index < 0) {
+                    obecny = slajdowanie - 1;
+                } else {
+                    obecny = index;
+                }
+                slides.style.transform = `translateX(${-obecny * 100}%)`;
+            }
+
+            function nastepny() {
+                poka(obecny + 1);
+            }
+
+            function poprzedni() {
+                poka(obecny - 1);
+            }
+
+            setInterval(nastepny, 5000);
+
+            document.addEventListener('DOMContentLoaded', () => {
+                poka(obecny);
+            });
+        </script>
+        <a id="menu"></a>
+        <div id="menu2">
+        <section class="menu">
+            <h1>Menu</h1>
+            <div class="rzeczywmenu">
+                <div class="jedzenie">
+                    <img src="sexonthebeach.jpg" alt="drinek">
+                    <div class="cena"> 39,99 zł/300ml</div><a>Sex On The Beach</a>
+                </div>
+                <div class="jedzenie">
+                    <img src="aperol.jpg" alt="Pizza">
+                    <div class="cena">34,99 zł/300ml</div><a>Aperol Spritz</a>
+                </div>
+                <div class="jedzenie">
+                    <img src="tequila.jpg" alt="Tacos">
+                    <div class="cena"> 59,99 zł/300ml</div><a>Tequila Sunrise</a>
+                </div><br>
+            </div>
+            </section>
+            <section class="menu">
+        <div class="rzeczywmenu">
+            <div class="jedzenie">
+                <img src="ribs.jpeg" alt="Burger">
+                <div class="cena">180 zł/porcja</div><a>Iberyjskie Wędzone Żeberka</a>
+            </div>
+            <div class="jedzenie">
+                <img src="barbe.jpg" alt="Pizza">
+                <div class="cena">59,99 zł/porcja</div><a>Anticucho</a>
+            </div>
+            <div class="jedzenie">
+                <img src="octopus.jpg" alt="Tacos">
+                <div class="cena">220 zł/porcja</div><a>Ośmiornica</a>
+            </div><br>
+        </div></section>
+        <section class="menu">
+    <div class="rzeczywmenu">
+        <div class="jedzenie">
+            <img src="maliny.jpg" alt="Burger">
+            <div class="cena">27 zł/kawałek</div><a>Ciasto czekoladowe z malinami</a>
+        </div>
+        <div class="jedzenie">
+            <img src="pancake.jpg" alt="Pizza">
+            <div class="cena">27 zł/kawałek</div><a>Pancakes w sosie czekoladowym</a>
+        </div>
+        <div class="jedzenie">
+            <img src="cake.jpg" alt="Tacos">
+            <div class="cena">34 zł/kawałek</div><a>Ciasto owoce lesne</a>
+        </div><br>
+    </div>
+</section><br></div>
+<div id="onas">
+    <h1>O nas</h1>
+    <div class="onaskon">
+        <div class="onasimg">
+            <img src="ribs.jpg" alt="Zdjęcie" class="onasimg1">
+        </div>
+        <div class="onastekst">
+            <p>Witamy w WillyEat, wyjątkowej restauracji zlokalizowanej w sercu Słomnik! Jesteśmy dumni z tego, że możemy zaprosić Państwa do miejsca, gdzie pasja do jedzenia łączy się z wyjątkową atmosferą.
+
+                WillyEat to nie tylko restauracja – to miejsce, gdzie każdy posiłek staje się niezapomnianym doświadczeniem. Nasza kuchnia łączy w sobie tradycyjne smaki z nowoczesnymi technikami kulinarnymi, tworząc dania, które zachwycają nawet najbardziej wymagających smakoszy. Starannie dobieramy składniki, korzystając z lokalnych dostawców, aby zapewnić świeżość i najwyższą jakość naszych potraw.
+                
+                Nasz zespół to grupa utalentowanych i doświadczonych kucharzy oraz obsługi, którzy z pasją dbają o każdy szczegół. Chcemy, aby każda wizyta w WillyEat była dla Państwa wyjątkowym przeżyciem – od pierwszego powitania aż po ostatni kęs.
+                
+                Zapraszamy do odkrywania bogactwa smaków w naszej karcie, która zmienia się sezonowo, aby zawsze oferować to, co najlepsze w danym czasie. Nasza oferta obejmuje zarówno klasyczne dania, jak i autorskie kompozycje, które z pewnością zaskoczą i zachwycą Państwa podniebienie.
+                
+                WillyEat to także idealne miejsce na spotkania rodzinne, biznesowe lunche czy romantyczne kolacje. Dbamy o to, aby każdy gość czuł się u nas swobodnie i komfortowo, ciesząc się niepowtarzalnym klimatem naszej restauracji.
+                
+                Dołącz do nas i pozwól sobie na kulinarne uniesienia w WillyEat. Czekamy na Ciebie z otwartymi ramionami i pysznymi potrawami, które na długo pozostaną w Twojej pamięci.
+        </div>
+    </div>
+
+</div>
+<br>
+<h1>Rezerwacja</h1><br>
+<div id="rezerwacja">
+    <h2></h2>
+    <form id="formularz-rezerwacji">
+        <label for="imie">Imię:</label>
+        <input type="text" id="imie" name="imie" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefon">Telefon:</label>
+        <input type="tel" id="telefon" name="telefon" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="czas">Czas:</label>
+        <input type="time" id="czas" name="czas" required>
+
+        <label for="gosci">Liczba Gości:</label>
+        <input type="number" id="gosci" name="gosci" min="1" required>
+
+        <label for="uwagi">Uwagi:</label>
+        <textarea id="uwagi" name="uwagi"></textarea>
+
+        <button type="submit">Zarezerwuj</button>
+    </form>
+    <div id="potwierdzenie-rezerwacji" class="ukryty">
+        <p>Twoja rezerwacja została potwierdzona. Czekamy na Ciebie!</p>
+    </div>
+</div>
+
+    </main>
+
+</div>
+<footer id="kontakt">
+    <div id="stopa">
+        <div id="zegar">00:00:00</div>
+        <p id="dzien"></p><p id="iledokonca"></p>
+    </div><br>
+    <div class="footer-divs">
+        <div class="footer-div2">
+            <h3>Kontakt</h3><br>
+            <img class="zdjeciefo" src="43142-200.png"><a>&nbsp;&nbsp;&nbsp;tel. +48 997 911 122</a>
+        </div>
+        <div class="footer-div3">
+            <h3>Sociale</h3><br>
+            <a href="https://www.instagram.com"><img class="zdjeciefo" src="Instagram_icon.png.webp"></a>
+            <a href="https://www.facebook.pl"><img class="zdjeciefo" src="Facebook_Logo_2023.png"></a>
+            <a href="https://www.tiktok.com/foryou"><img class="zdjeciefo" src="Social-media_Tiktok-512.webp"></a>
+        </div>
+        <div class="footer-div4">
+            <h3>Lokalizacja</h3><br>
+            <p>Rzemieślnicza 11-1, 32-090 Słomniki</p>
+        </div>
+    </div>
+
+    <script>
+        function updatezegar() {
+            const zegarElement = document.getElementById('zegar');
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('pl-PL', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            zegarElement.textContent = timeString;
+        }
+
+        setInterval(updatezegar, 1000);
+        updatezegar();
+
+        function dzisiaj(){
+            var dnityg= ["niedziela", "poniedziałek", "wtorek","środa","czwartek", "piątek", "sobota"];
+            var dzisiaj=new Date();
+            var dzien = dzisiaj.getDay();
+            var formatter=new Intl.DateTimeFormat('pl',{
+                day:'numeric',
+                month:'long',
+                year:'numeric'
+            });
+            var p=formatter.format(new Date());
+            document.getElementById("dzien").innerHTML = "Dziś jest "+dnityg[dzien]+" "+p;
+        }
+
+        dzisiaj();
+        setInterval(dzisiaj,1000);
+        
+        function ile(){
+            var dzis = new Date();
+            var koniec = new Date(2024,11,31);
+            var roznica=koniec-dzis;
+            var zamiana=parseInt(roznica/(24*60*60*1000));
+            document.getElementById("iledokonca").innerHTML = 'Do końca roku zostało '+zamiana+" dni";
+        }
+        ile();
+        setInterval(ile,1000);
+
+        function scrollToFooter() {
+            document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+        document.getElementById("formularz-rezerwacji").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const imie = document.getElementById("imie").value;
+  const email = document.getElementById("email").value;
+  const telefon = document.getElementById("telefon").value;
+  const data = document.getElementById("data").value;
+  const czas = document.getElementById("czas").value;
+  const gosci = document.getElementById("gosci").value;
+  const uwagi = document.getElementById("uwagi").value;
+
+  document.getElementById("formularz-rezerwacji").classList.add("ukryty");
+  document.getElementById("potwierdzenie-rezerwacji").classList.remove("ukryty");
+});
+
+const wybraneGodziny = [
+    "12:00", "12:15", "12:30", "12:45",
+    "13:00", "13:15", "13:30", "13:45",
+    "14:00", "14:15", "14:30", "14:45",
+    "15:00", "15:15", "15:30", "15:45",
+    "16:00", "16:15", "16:30", "16:45",
+    "17:00", "17:15", "17:30", "17:45",
+    "18:00", "18:15", "18:30", "18:45",
+    "19:00", "19:15", "19:30", "19:45",
+    "20:00", "20:15", "20:30", "20:45",
+    "21:00", "21:15", "21:30", "21:45",
+    "22:00", "22:15", "22:30", "22:45",
+    "23:00"
+];
+
+const czasSelect = document.getElementById("czas");
+
+czasSelect.innerHTML = "";
+
+wybraneGodziny.forEach(godzina => {
+    const option = document.createElement("option");
+    option.value = godzina;
+    option.textContent = godzina;
+    czasSelect.appendChild(option);
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('body > *:not(footer)');
+    elements.forEach(element => {
+        element.classList.add('pop-in');
+    });
+});
+});
+
+document.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+        header.style.backgroundColor = '#FFFFFF'; 
+        header.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)'; 
+    } else {
+        header.style.backgroundColor = '#FFFFFF';
+        header.style.boxShadow = 'none'; 
+    }
+});
+
+    </script>
+    <br><br>
+</footer>
+<a href="#top"><button class="back">Powrót</button></a>
+</body>
+</html>
